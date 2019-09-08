@@ -1,0 +1,61 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["prettier", "@typescript-eslint"],
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "global-require": 0,
+    "no-use-before-define": 0,
+    "no-mixed-operators": 0,
+    "no-nested-ternary": 0,
+    "no-underscore-dangle": 0,
+    "no-restricted-syntax": 0,
+    "react/jsx-filename-extension": 0,
+    "react/sort-comp": 0,
+    "react/forbid-prop-types": 0,
+    "react/no-unescaped-entities": 0,
+    "react/destructuring-assignment": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-wrap-multilines": 0,
+    "react/no-multi-comp": 0,
+    "linebreak-style": 0,
+    "jsx-a11y/label-has-associated-control": 0,
+    "jsx-a11y/label-has-for": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/setupTests.js",
+          "**/*.test.js",
+          "**/*.stories.js",
+          "**/*.karmatest.js",
+          "**/rollup.config.js"
+        ]
+      }
+    ],
+    "import/prefer-default-export": 0,
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error"
+  },
+  "settings": {
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.tsx"],
+      "rules": {
+        "react/prop-types": "off"
+      }
+    }
+  ]
+}
