@@ -3,6 +3,9 @@
   "version": "1.3.1",
   "main": "lib/index.js",
   "module": "src/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -12,5 +15,6 @@
     "react": "^15.0.0 || ^16.0.0",
     "react-dom": "^15.0.0 || ^16.0.0",
     "styled-components": "^4.0.0"
-  }
+  },
+  "gitHead": "1b94abb1e88ac40ee46a36b652e9121edb18c096"
 }
