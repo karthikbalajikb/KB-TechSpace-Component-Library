@@ -60,3 +60,11 @@ typings/
 
 # next.js build output
 .next
+
+# storybook build
+storybook-static
+
+# package
+packages/*/lib
+
+build

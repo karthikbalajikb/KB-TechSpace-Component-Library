@@ -1,0 +1,30 @@
+{
+  "name": "@kb-techspace-org/text",
+  "version": "1.0.0",
+  "description": "Text Component",
+  "author": "Karthik Balaji <karthik@auzmor.com>",
+  "homepage": "https://github.com/karthikbalajikb/KB-TechSpace-Component-Library#readme",
+  "license": "ISC",
+  "main": "lib/Text.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthikbalajikb/KB-TechSpace-Component-Library.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "start": "tsc -w"
+  },
+  "bugs": {
+    "url": "https://github.com/karthikbalajikb/KB-TechSpace-Component-Library/issues"
+  }
+}
