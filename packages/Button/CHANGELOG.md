@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/karthikbalajikb/KB-TechSpace-Component-Library/compare/@kb-techspace-org/button@1.5.0...@kb-techspace-org/button@1.6.0) (2019-09-11)
+
+### Features
+
+- **Button:** link Text component as dependency to Button component ([07a711d](https://github.com/karthikbalajikb/KB-TechSpace-Component-Library/commit/07a711d))
+
 # [1.5.0](https://github.com/karthikbalajikb/KB-TechSpace-Component-Library/compare/@kb-techspace-org/button@1.4.1...@kb-techspace-org/button@1.5.0) (2019-09-11)
 
 ### Features
