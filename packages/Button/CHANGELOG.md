@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.1](https://github.com/karthikbalajikb/KB-TechSpace-Component-Library/compare/@kb-techspace-org/button@1.6.0...@kb-techspace-org/button@1.6.1) (2019-09-11)
+
+**Note:** Version bump only for package @kb-techspace-org/button
+
 # [1.6.0](https://github.com/karthikbalajikb/KB-TechSpace-Component-Library/compare/@kb-techspace-org/button@1.5.0...@kb-techspace-org/button@1.6.0) (2019-09-11)
 
 ### Features

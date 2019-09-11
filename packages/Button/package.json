@@ -1,6 +1,6 @@
 {
   "name": "@kb-techspace-org/button",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "main": "lib/index.js",
   "module": "src/index.js",
   "publishConfig": {
@@ -10,7 +10,7 @@
     "start": "tsc -w"
   },
   "dependencies": {
-    "@kb-techspace-org/text": "^1.1.0",
+    "@kb-techspace-org/text": "^1.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "styled-components": "^4.3.2"
