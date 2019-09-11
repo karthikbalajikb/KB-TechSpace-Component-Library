@@ -48,7 +48,7 @@ Text.defaultProps = {
   lineHeight: 0,
   fontWeight: 400,
   letterSpacing: 0.3,
-  color: '#9e9a9a',
+  color: 'lightgray',
   opacity: 1,
 };
 

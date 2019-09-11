@@ -19,4 +19,6 @@ stories.addDecorator(withKnobs).addParameters({
 });
 
 // Knobs for React props
-stories.add('Standard', () => <Text>{text('Label', 'hello all')}</Text>);
+stories.add('Standard', () => (
+  <Text color={text('color', 'blue')}>{text('Label', 'hello all')}</Text>
+));
