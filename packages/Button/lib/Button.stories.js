@@ -1,12 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
-
 import Button from '.';
 import ButtonReadme from '../README.md';
-
-const stories = storiesOf('Button', module);
-
+var stories = storiesOf('Button', module);
 // Add the `withKnobs` decorator to add knobs support to your stories.
 // You can also configure `withKnobs` as a global decorator.
 stories.addDecorator(withKnobs).addParameters({
@@ -17,8 +14,10 @@ stories.addDecorator(withKnobs).addParameters({
     includePropTables: [Button],
   },
 });
-
 // Knobs for React props
-stories.add('Primary', () => (
-  <Button label={text('Label', 'Priamary button')} />
-));
+stories.add('Primary', function() {
+  return React.createElement(Button, {
+    label: text('Label', 'Priamary button'),
+  });
+});
+//# sourceMappingURL=Button.stories.js.map
