@@ -1,15 +1,19 @@
 {
-  "name": "root",
+  "name": "@kb-techspace-org/core",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.spec.js",
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "dev": "start-storybook -p 8907",
+    "dev": "start-storybook -p 9000",
+    "build-storybook": "build-storybook -c .storybook",
     "coverage": "jest --coverage",
-    "unit": "jest"
+    "build": "tsc",
+    "prestart": "yarn build",
+    "start": "lerna run start --stream --parallel",
+    "pretest": "yarn build",
+    "test": "jest"
   },
   "husky": {
     "hooks": {
@@ -37,6 +41,7 @@
     "@commitlint/config-conventional": "^8.1.0",
     "@storybook/addon-docs": "^5.2.0-rc.9",
     "@storybook/addon-info": "^5.1.11",
+    "@storybook/addon-knobs": "^5.1.11",
     "@storybook/preset-typescript": "^1.1.0",
     "@storybook/react": "^5.1.11",
     "@storybook/storybook-deployer": "^2.8.1",
@@ -46,6 +51,8 @@
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "@types/react-test-renderer": "^16.9.0",
+    "@types/storybook-readme": "^5.0.3",
+    "@types/storybook__addon-knobs": "^5.0.3",
     "@types/storybook__react": "^4.0.2",
     "@types/styled-components": "^4.1.18",
     "@typescript-eslint/eslint-plugin": "^2.1.0",
@@ -74,6 +81,7 @@
     "react-docgen-typescript-loader": "^3.2.0",
     "react-dom": "^16.9.0",
     "react-test-renderer": "^16.9.0",
+    "storybook-readme": "^5.0.8",
     "styled-components": "^4.3.2",
     "ts-jest": "^24.0.2",
     "ts-loader": "^6.0.4",

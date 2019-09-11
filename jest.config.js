@@ -21,4 +21,9 @@ module.exports = {
   },
   testRegex: '(/test/.*|\\.(test|spec))\\.(ts|tsx|js)$',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
+  globals: {
+    'ts-jest': {
+      tsConfig: 'tsconfig.json',
+    },
+  },
 };

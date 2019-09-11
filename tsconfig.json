@@ -9,7 +9,7 @@
     "jsx": "react",
     "moduleResolution": "node",
     "rootDirs": ["packages"],
-    "baseUrl": "src",
+    "baseUrl": ".",
     "types": ["react", "jest"],
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
@@ -23,6 +23,6 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
-  "include": ["packages"],
-  "exclude": ["node_modules", "packages/**/lib", "typings"]
+  "include": ["packages/*/src", "globals.d.ts"],
+  "exclude": ["node_modules", "packages/*/lib"]
 }
