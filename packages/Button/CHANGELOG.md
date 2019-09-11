@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/karthikbalajikb/KB-TechSpace-Component-Library/compare/@kb-techspace-org/button@1.4.1...@kb-techspace-org/button@1.5.0) (2019-09-11)
+
+### Features
+
+- **button:** update storybook and readme ([a442c24](https://github.com/karthikbalajikb/KB-TechSpace-Component-Library/commit/a442c24))
+
 ## [1.4.1](https://github.com/karthikbalajikb/KB-TechSpace-Component-Library/compare/@kb-techspace-org/button@1.4.0...@kb-techspace-org/button@1.4.1) (2019-09-08)
 
 ### Bug Fixes
