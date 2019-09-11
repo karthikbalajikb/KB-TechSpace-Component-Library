@@ -1,12 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import Text from '@kb-techspace-org/text';
 
 interface Props {
   label: string;
 }
 
 const Button: React.FC<Props> = ({ label }) => {
-  return <Container>{label}</Container>;
+  return (
+    <Container>
+      <Text>{label}</Text>
+    </Container>
+  );
 };
 
 export default Button;

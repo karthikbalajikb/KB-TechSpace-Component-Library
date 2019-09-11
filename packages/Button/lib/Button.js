@@ -10,9 +10,14 @@ var __makeTemplateObject =
   };
 import React from 'react';
 import styled from 'styled-components';
+import Text from '@kb-techspace-org/text';
 var Button = function(_a) {
   var label = _a.label;
-  return React.createElement(Container, null, label);
+  return React.createElement(
+    Container,
+    null,
+    React.createElement(Text, null, label),
+  );
 };
 export default Button;
 var Container = styled.button(
