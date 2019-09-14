@@ -5,6 +5,7 @@
     "packages/*"
   ],
   "scripts": {
+    "commit": "git-cz",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "dev": "start-storybook -p 9000",
     "build-storybook": "build-storybook -c .storybook",
