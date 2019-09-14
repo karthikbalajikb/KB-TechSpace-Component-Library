@@ -17,19 +17,20 @@
   },
   "husky": {
     "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
       "pre-commit": "lint-staged"
     }
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
   },
   "lint-staged": {
     "*.{js,json,md,yml}": [
       "prettier --write",
       "git add"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "devDependencies": {
     "@babel/cli": "^7.6.0",
@@ -62,7 +63,9 @@
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-styled-components": "^1.10.6",
+    "commitizen": "^4.0.3",
     "cross-env": "^5.2.1",
+    "cz-conventional-changelog": "^3.0.2",
     "eslint": "^6.3.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.2.0",
