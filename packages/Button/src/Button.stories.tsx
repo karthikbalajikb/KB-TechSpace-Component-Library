@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 
 import Button from '.';
-import ButtonReadme from '../README.md';
+// import ButtonReadme from '../README.md';
 
 const stories = storiesOf('Button', module);
 
@@ -13,7 +13,7 @@ stories.addDecorator(withKnobs).addParameters({
   options: { showPanel: true, panelPosition: 'bottom' },
   readme: {
     // Show readme at the addons panel
-    sidebar: ButtonReadme,
+    // sidebar: ButtonReadme,
     includePropTables: [Button],
   },
 });

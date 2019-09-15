@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text renders correctly 1`] = `
+.c0 {
+  font-size: 14px;
+  line-height: 27px;
+  -webkit-letter-spacing: 0.3px;
+  -moz-letter-spacing: 0.3px;
+  -ms-letter-spacing: 0.3px;
+  letter-spacing: 0.3px;
+  color: lightgray;
+  opacity: 1;
+}
+
+<span
+  className="c0"
+  color="lightgray"
+  fontSize={14}
+  fontWeight={400}
+  letterSpacing={0.3}
+  opacity={1}
+>
+  demo
+</span>
+`;

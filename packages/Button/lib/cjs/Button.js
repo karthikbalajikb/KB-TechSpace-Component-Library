@@ -1,3 +1,4 @@
+'use strict';
 var __makeTemplateObject =
   (this && this.__makeTemplateObject) ||
   function(cooked, raw) {
@@ -8,14 +9,25 @@ var __makeTemplateObject =
     }
     return cooked;
   };
-import React from 'react';
-import styled from 'styled-components';
+var __importDefault =
+  (this && this.__importDefault) ||
+  function(mod) {
+    return mod && mod.__esModule ? mod : { default: mod };
+  };
+Object.defineProperty(exports, '__esModule', { value: true });
+var react_1 = __importDefault(require('react'));
+var styled_components_1 = __importDefault(require('styled-components'));
+var text_1 = __importDefault(require('@kb-techspace-org/text'));
 var Button = function(_a) {
   var label = _a.label;
-  return React.createElement(Container, null, label);
+  return react_1.default.createElement(
+    Container,
+    null,
+    react_1.default.createElement(text_1.default, null, label),
+  );
 };
-export default Button;
-var Container = styled.button(
+exports.default = Button;
+var Container = styled_components_1.default.button(
   templateObject_1 ||
     (templateObject_1 = __makeTemplateObject(
       [

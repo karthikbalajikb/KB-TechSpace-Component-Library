@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 interface Props {
@@ -14,10 +13,6 @@ const Ribbon: React.FC<Props> = ({ title }) => (
     <RibbonText>{title}</RibbonText>
   </Container>
 );
-
-Ribbon.propTypes = {
-  title: PropTypes.string.isRequired,
-};
 
 export default Ribbon;
 

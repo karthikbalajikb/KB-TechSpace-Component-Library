@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders correctly 1`] = `
+.c1 {
+  font-size: 14px;
+  line-height: 27px;
+  -webkit-letter-spacing: 0.3px;
+  -moz-letter-spacing: 0.3px;
+  -ms-letter-spacing: 0.3px;
+  letter-spacing: 0.3px;
+  color: lightgray;
+  opacity: 1;
+}
+
+.c0 {
+  background-color: rgb(255,51,101);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 9px 36px;
+}
+
+<button
+  className="c0"
+>
+  <span
+    className="c1"
+    color="lightgray"
+    fontSize={14}
+    fontWeight={400}
+    letterSpacing={0.3}
+    opacity={1}
+  >
+    demo
+  </span>
+</button>
+`;

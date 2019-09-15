@@ -64,7 +64,13 @@ typings/
 # storybook build
 storybook-static
 
-# package
-packages/*/lib
+# storybook build files
+packages/**/lib/**/*.js.map
+packages/**/lib/**/*.stories.js
+packages/**/lib/**/*.stories.js.map
+packages/**/lib/**/*.stories.d.ts
 
 build
+
+#editor settings
+.vscode

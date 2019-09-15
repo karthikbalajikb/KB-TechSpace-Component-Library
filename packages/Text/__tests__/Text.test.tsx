@@ -2,11 +2,11 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-import Button from '.';
+import Text from '../src/Text';
 
-describe('Button', () => {
+describe('Text', () => {
   test('renders correctly', () => {
-    const tree = renderer.create(<Button label="demo" />).toJSON();
+    const tree = renderer.create(<Text>demo</Text>).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
