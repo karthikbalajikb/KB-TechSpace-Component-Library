@@ -5,7 +5,8 @@
   "author": "Karthik Balaji <karthik@auzmor.com>",
   "homepage": "https://github.com/karthikbalajikb/KB-TechSpace-Component-Library#readme",
   "license": "ISC",
-  "main": "lib/Text.js",
+  "main": "lib/cjs/Text.js",
+  "module": "lib/es/Text.js",
   "publishConfig": {
     "access": "public"
   },
@@ -22,7 +23,8 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "start": "tsc -w"
+    "build:cjs": "tsc -w --outDir ./lib/cjs --module commonjs",
+    "build:esm": "tsc -w --outDir ./lib/es --module es2015"
   },
   "bugs": {
     "url": "https://github.com/karthikbalajikb/KB-TechSpace-Component-Library/issues"

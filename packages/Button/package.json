@@ -7,7 +7,8 @@
     "access": "public"
   },
   "scripts": {
-    "start": "tsc -w"
+    "build:cjs": "tsc -w --outDir ./lib/cjs --module commonjs",
+    "build:esm": "tsc -w --outDir ./lib/es --module es2015"
   },
   "dependencies": {
     "@kb-techspace-org/text": "^1.1.1",

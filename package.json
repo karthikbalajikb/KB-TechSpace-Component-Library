@@ -7,14 +7,16 @@
   "scripts": {
     "commit": "git-cz",
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "dev": "start-storybook -p 9000",
+    "dev": "start-storybook -p 9000 .storybook",
     "build-storybook": "build-storybook -c .storybook",
     "coverage": "jest --coverage",
     "build": "tsc",
     "prestart": "yarn build",
-    "start": "lerna run start --stream --parallel",
+    "start:cjs": "lerna exec --stream --parallel -- tsc -w --outDir ./lib/cjs --module commonjs",
+    "start:esm": "lerna exec --stream --parallel -- tsc -w --outDir ./lib/es --module es2015",
+    "start": "yarn start:cjs && yarn start:esm",
     "pretest": "yarn build",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "husky": {
     "hooks": {
@@ -47,6 +49,9 @@
     "@storybook/preset-typescript": "^1.1.0",
     "@storybook/react": "^5.1.11",
     "@storybook/storybook-deployer": "^2.8.1",
+    "@testing-library/jest-dom": "^4.1.0",
+    "@testing-library/react": "^9.1.4",
+    "@types/enzyme": "^3.10.3",
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.4",
     "@types/prop-types": "^15.7.2",
@@ -67,6 +72,8 @@
     "commitizen": "^4.0.3",
     "cross-env": "^5.2.1",
     "cz-conventional-changelog": "^3.0.2",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^6.3.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.2.0",

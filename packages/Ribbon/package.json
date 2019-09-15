@@ -22,7 +22,8 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "start": "tsc -w"
+    "build:cjs": "tsc -w --outDir ./lib/cjs --module commonjs",
+    "build:esm": "tsc -w --outDir ./lib/es --module es2015"
   },
   "bugs": {
     "url": "https://github.com/karthikbalajikb/KB-TechSpace-Component-Library/issues"
