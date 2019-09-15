@@ -1,6 +1,6 @@
 {
   "name": "@kb-techspace-org/button",
-  "version": "1.6.1",
+  "version": "1.7.0",
   "main": "lib/index.js",
   "module": "src/index.js",
   "publishConfig": {
@@ -11,7 +11,7 @@
     "build:esm": "tsc -w --outDir ./lib/es --module es2015"
   },
   "dependencies": {
-    "@kb-techspace-org/text": "^1.1.1",
+    "@kb-techspace-org/text": "^1.2.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "styled-components": "^4.3.2"
